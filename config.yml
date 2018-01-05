@@ -1,0 +1,13 @@
+floors:
+  - 1:
+    doors: 1
+    tenants: Biz1, Biz2
+  - 2:
+    doors: 1
+    tenants: Biz1, Biz2
+ elevators:
+  - west:
+      capacity-lb: 2500
+      height-cm: 274.32 # 9 feet
+      width-cm: 100
+      length-cm: 100

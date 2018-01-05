@@ -1,40 +1,9 @@
-class Floor
-  attr_accessor :number
-  def initialize(floor_number)
-    @number = floor_number
-  end
-end
+#!/usr/bin/env ruby
 
-class Elevator
-  attr_accessor :capacity
-  def initialize(capacity)
-    @capacity = capacity
-  end
-end
+# one system has a config file and can take updates-
 
-class ElevatorRequest
-  attr_accessor :starting_floor, :ending_floor
-  def initialize(starting_floor)
-    @starting_floor = starting_floor
-  end
-  def set_end_floor(ending_floor)
-    @ending_floor = ending_floor
-  end
-end
+config = YAML.load_file("config.yml") # make this configurable
 
-class Dispatcher
-  def initialize(elevators)
-    @starting_floor = starting_floor
-  end
-
-  def request(floor)
-  end
-
-  def go
-  end
-end
-
-floors = [Floor.new(1), Floor.new(2), Floor.new(3)]
 elevators = [Elevator.new(10), Elevator.new(10)]
 elevator_request = ElevatorRequest.new(2)
 elevator_request.set_end_floor = 3
